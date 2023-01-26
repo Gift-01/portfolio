@@ -24,7 +24,7 @@
             for building a ...
           </p>
           <a
-            href="https://medium.com/me/stats/post/31d2eba832ee"
+            href="https://medium.com/@kristagift/a-react-counter-app-implemented-with-two-methods-react-hook-usereducer-31d2eba832ee"
             target="_blank"
             class="underline hover:text-gray-50"
             >Read More</a
