@@ -1,7 +1,11 @@
 <template>
   <div class="wrappers" id="portfolio">
     <div>
-      <h1>Project</h1>
+      <h1
+        class="flex items-center justify-center font-black text-2xl md:text-4xl my-[35px] text-gray-50"
+      >
+        PROJECTS
+      </h1>
       <div class="container">
         <div>
           <div class="box">
@@ -10,8 +14,11 @@
             </div>
             <div class="content">
               <div>
-                <h2>React</h2>
-                <p>An App that stores user database</p>
+                <h2>React / css</h2>
+                <p>
+                  An App that stores user database and allows you to search for
+                  user database
+                </p>
               </div>
             </div>
           </div>
@@ -33,9 +40,11 @@
             </div>
             <div class="content">
               <div>
-                <h2>React</h2>
-                <h2>Css</h2>
-                <p>A Calculator</p>
+                <h2>React / css</h2>
+                <p>
+                  A Calculator that allows you to do simple addition,
+                  subtraction,multiplication and division.
+                </p>
               </div>
             </div>
           </div>
@@ -57,8 +66,11 @@
             </div>
             <div class="content">
               <div>
-                <h2>React Css</h2>
-                <p>A counter App</p>
+                <h2>React / Css</h2>
+                <p>
+                  A counter App that allow you to reduce, increase,set value and
+                  Reset value.
+                </p>
               </div>
             </div>
           </div>
@@ -101,6 +113,7 @@ export default {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  background-color: rgb(62, 75, 87);
 }
 
 .container {

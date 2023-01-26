@@ -1,34 +1,38 @@
 <template>
   <div
     id="contact"
-    class="w-[100%] h-[100%] flex justify-center pt-[50px] pb-[30px] md:pb-[100px]"
+    class="w-[100%] h-[100%] flex justify-center pt-[50px] pb-[30px] md:pb-[100px] bg-gray-600"
   >
     <div class="w-[75%] md:w-[80%] sm:w-[50%] xl:w-[50%]">
-      <form @submit.prevent class="bg-gray-600 rounded-[20px]">
+      <h1
+        class="flex items-center justify-center mb-[35px] text-gray-50 text-2xl"
+      >
+        CONTACT ME
+      </h1>
+      <form @submit.prevent class="bg-gray-300 rounded-[20px]">
         <div class="flex flex-col md:flex-row">
-          <div class="ml-[50px]">
-            <p class="text-gray-50 mt-[41px]">Let's Work Together</p>
-            <p class="text-gray-50">Contact me</p>
+          <div class="flex md:unset flex-col items-center md:ml-[50px]">
+            <p class="text-gray-900 mt-[41px]">Let's Work Together</p>
             <input
               placeholder="Full Name"
               type="text"
-              class="flex m-[12px] py-[12px] border-0 border-gray-900 outline-none focus:ring focus:border-gray-300 my-[30px] rounded-[5px] w-[160px] md:w-[250px]"
+              class="flex m-[12px] pl-[12px] py-[12px] border-0 border-gray-900 outline-none focus:ring focus:border-gray-300 my-[30px] rounded-[5px] w-[160px] md:w-[250px]"
             />
             <input
               placeholder="Email"
               type="text"
-              class="flex m-[12px] py-[12px] border-0 border-gray-900 outline-none focus:ring focus:border-gray-300 my-[30px] rounded-[5px] w-[160px] md:w-[250px]"
+              class="flex m-[12px] pl-[12px] py-[12px] border-0 border-gray-900 outline-none focus:ring focus:border-gray-300 my-[30px] rounded-[5px] w-[160px] md:w-[250px]"
             />
             <textarea
               style="resize: none"
               placeholder="Message"
               type="text"
-              class="flex m-[12px] py-[12px] border-0 border-gray-900 outline-none focus:ring focus:border-gray-300 my-[30px] rounded-[5px] w-[160px] md:w-[250px]"
+              class="flex m-[12px] pl-[12px] py-[12px] border-0 border-gray-900 outline-none focus:ring focus:border-gray-300 my-[30px] rounded-[5px] w-[160px] md:w-[250px]"
             ></textarea>
 
             <button
               type="submit"
-              class="text-gray-50 rounded-[10px] border-2 border-gray-60 mb-[22px] w-[150px] md:w-[250px] h-[40px] outline-none my-[30px]"
+              class="text-gray-600 rounded-[10px] border-2 border-gray-600 mb-[22px] w-[150px] md:w-[250px] h-[40px] outline-none my-[30px]"
             >
               Send Message
             </button>
