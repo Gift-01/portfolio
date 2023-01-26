@@ -1,64 +1,74 @@
 <template>
-  <div class="wrappers">
-    <div class="container">
-      <div>
-        <div class="box">
-          <div class="imgbx">
-            <img :src="databasePreview" />
-          </div>
-          <div class="content">
-            <div>
-              <h2>React</h2>
-              <p>An App that stores user database</p>
+  <div class="wrappers" id="portfolio">
+    <div>
+      <h1>Project</h1>
+      <div class="container">
+        <div>
+          <div class="box">
+            <div class="imgbx">
+              <img :src="databasePreview" />
+            </div>
+            <div class="content">
+              <div>
+                <h2>React</h2>
+                <p>An App that stores user database</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="btn-wrapper">
-          <a
-            href="https://gift-random-user-database.netlify.app/"
-            target="_blank"
+          <div
+            class="border-solid border-2 border-light-blue-500 rounded-md text-center p-2 m-6 text-gray-100 bg-gray-700 hover:text-gray-900 hover:bg-gray-50"
           >
-            <button>View Website</button>
-          </a>
-        </div>
-      </div>
-      <div>
-        <div class="box">
-          <div class="imgbx">
-            <img :src="calculatorPreview" />
+            <a
+              href="https://gift-random-user-database.netlify.app/"
+              target="_blank"
+            >
+              <button>View Website</button>
+            </a>
           </div>
-          <div class="content">
-            <div>
-              <h2>React</h2>
-              <h2>Css</h2>
-              <p>A Calculator</p>
+        </div>
+        <div>
+          <div class="box">
+            <div class="imgbx">
+              <img :src="calculatorPreview" />
+            </div>
+            <div class="content">
+              <div>
+                <h2>React</h2>
+                <h2>Css</h2>
+                <p>A Calculator</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="btn-wrapper">
-          <a href="https://gift-react-calculator.netlify.app/" target="_blank">
-            <button>View Website</button>
-          </a>
-        </div>
-      </div>
-      <div>
-        <div class="box">
-          <div class="imgbx">
-            <img :src="counterAppPreview" />
+          <div
+            class="border-solid border-2 border-light-blue-500 rounded-md text-center p-2 m-6 text-gray-100 bg-gray-700 hover:text-gray-900 hover:bg-gray-50"
+          >
+            <a
+              href="https://gift-react-calculator.netlify.app/"
+              target="_blank"
+            >
+              <button>View Website</button>
+            </a>
           </div>
-          <div class="content">
-            <div>
-              <h2>React Css</h2>
-              <p>A counter App</p>
+        </div>
+        <div>
+          <div class="box">
+            <div class="imgbx">
+              <img :src="counterAppPreview" />
+            </div>
+            <div class="content">
+              <div>
+                <h2>React Css</h2>
+                <p>A counter App</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="border-solid border-2 border-light-blue-500 rounded-md">
-          <a href="https://gift-counter-app.netlify.app/" target="_blank">
-            <button class="justify-center justify-items-center flex">
-              View Website
-            </button>
-          </a>
+          <div
+            class="border-solid border-2 border-light-blue-500 rounded-md text-center p-2 m-6 text-gray-100 bg-gray-700 hover:text-gray-900 hover:bg-gray-50"
+          >
+            <a href="https://gift-counter-app.netlify.app/" target="_blank">
+              <button class="text-center">View Website</button>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -110,14 +120,6 @@ export default {
   border: 2px solid gray;
   padding: 30px;
 }
-.btn-wrapper {
-  background-color: greenyellow;
-
-  /* z-index: 1; */
-  /* position: relative; */
-  /* top: 0 !important;
-  bottom: 0; */
-}
 
 .container .box:hover {
   z-index: 1;
@@ -141,7 +143,7 @@ export default {
   width: 100%;
   height: 100%;
   z-index: 1;
-  background: linear-gradient(180deg, rgb(224, 218, 218), #000);
+  background: linear-gradient(180deg, #000, rgb(233, 230, 230));
   mix-blend-mode: multiply;
   opacity: 0;
   transition: 0.5s;

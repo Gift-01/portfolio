@@ -1,5 +1,7 @@
 <template>
-  <div class="bg-gray-600 shadow-lg h-[100px] flex items-center">
+  <div
+    class="fixed top-0 w-full z-[99] bg-gray-600 shadow-lg h-[238px] md:h-[100px] flex items-center"
+  >
     <div class="flex items-center justify-between flex-wrap bg-teal px-6">
       <div class="block sm:hidden">
         <button
@@ -21,37 +23,38 @@
         class="w-full flex-grow sm:flex sm:items-center sm:w-auto"
       >
         <div class="text-sm sm:flex-grow">
-          <router-link
-            to="/TheHome"
-            class="no-underline block mt-4 sm:inline-block sm:mt-0 text-gray-50 hover:text-black mr-4 focus:underline"
+          <p>Okoro Gift</p>
+          <button
+            @click="scroll('home')"
+            class="no-underline block mt-4 sm:inline-block sm:mt-0 text-gray-50 transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-110 mr-4 focus:underline hover:font-black hover:underline hover:text-black"
           >
             Home
-          </router-link>
+          </button>
 
-          <router-link
-            to="/About"
-            class="no-underline block mt-4 sm:inline-block sm:mt-0 text-gray-50 hover:text-black mr-4 focus:underline"
+          <button
+            @click="scroll('about')"
+            class="no-underline block mt-4 sm:inline-block sm:mt-0 text-gray-50 transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-110 mr-4 focus:underline hover:font-black"
           >
             About
-          </router-link>
-          <router-link
-            to="/Portfolio"
-            class="no-underline block mt-4 sm:inline-block sm:mt-0 text-gray-50 hover:text-black mr-4 focus:underline"
+          </button>
+          <button
+            @click="scroll('portfolio')"
+            class="no-underline block mt-4 sm:inline-block sm:mt-0 text-gray-50 hover:-translate-y-1 transition duration-200 ease-in-out hover:scale-110 mr-4 focus:underline hover:font-black"
           >
             portfolio
-          </router-link>
-          <router-link
-            to="/Blog"
-            class="no-underline block mt-4 sm:inline-block sm:mt-0 text-gray-50 hover:text-black mr-4 focus:underline"
+          </button>
+          <button
+            @click="scroll('blog')"
+            class="no-underline block mt-4 sm:inline-block sm:mt-0 text-gray-50 hover:-translate-y-1 hover:scale-110 mr-4 transition duration-200 ease-in-out focus:underline hover:font-black"
           >
             Blog
-          </router-link>
-          <router-link
-            to="/contact"
-            class="no-underline block mt-4 sm:inline-block sm:mt-0 text-gray-50 hover:text-black hover:underline focus:underline mr-4"
+          </button>
+          <button
+            @click="scroll('contact')"
+            class="no-underline block mt-4 sm:inline-block sm:mt-0 text-gray-50 transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-110 focus:underline hover:font-black mr-4"
           >
             Contact
-          </router-link>
+          </button>
         </div>
       </div>
     </div>
@@ -67,6 +70,10 @@ export default {
   methods: {
     toggle() {
       this.open = !this.open;
+    },
+    scroll(refName) {
+      const element = document.getElementById(refName);
+      element.scrollIntoView({ behavior: "smooth" });
     },
   },
 };
