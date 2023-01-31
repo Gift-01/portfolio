@@ -2,7 +2,7 @@
   <div class="wrappers" id="portfolio">
     <div>
       <h1
-        class="flex items-center justify-center font-black text-2xl md:text-4xl my-[35px] text-gray-50"
+        class="flex items-center justify-center font-black text-2xl md:text-4xl my-[35px]"
       >
         PROJECTS
       </h1>
@@ -113,7 +113,7 @@ export default {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: rgb(62, 75, 87);
+  /* background-color: rgb(62, 75, 87); */
 }
 
 .container {
@@ -156,7 +156,7 @@ export default {
   width: 100%;
   height: 100%;
   z-index: 1;
-  background: linear-gradient(180deg, #000, rgb(233, 230, 230));
+  background: linear-gradient(180deg, rgb(185, 176, 176), rgb(233, 230, 230));
   mix-blend-mode: multiply;
   opacity: 0;
   transition: 0.5s;
@@ -186,7 +186,7 @@ export default {
 }
 
 .container .box .content h2 {
-  color: #fff;
+  /* color: #fff; */
   transition: o.5s;
   text-transform: uppercase;
   margin-bottom: 5px;
@@ -200,7 +200,7 @@ export default {
 }
 
 .container .box .content p {
-  color: #fff;
+  /* color: #fff; */
   transform: translateY(200px);
   transition-delay: 0.5s;
   font-size: 14px;

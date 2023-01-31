@@ -1,5 +1,5 @@
 <template>
-  <div class="m-4 pt-[100px] pb-[50px] relative" id="about">
+  <div class="m-4 pt-[100px] pb-[50px] relative bg-gray-200" id="about">
     <div class="">
       <h1
         class="flex items-center justify-center font-black text-2xl mb-[35px]"
@@ -15,17 +15,13 @@
         collaborate with other developers on frontend Projects and also learn
         new things as well,I am open to Internship and Junior Roles.
       </p>
-      <!-- <p>
-        I am curently working on different Frontend Project to build my skills.I
-        am an Avid Learner, I am open to Internship and Junior Roles
-      </p> -->
     </div>
     <p class="text-xl">Some of my Skills include:</p>
     <div
       class="flex flex-wrap justify-center items-center w-[100%] overflow-hidden"
     >
       <div
-        class="flex flex-col md:flex-row border-2 border-gray-200 my-[40px] p-[50px]"
+        class="flex flex-col md:flex-row border-2 border-gray-600 my-[40px] p-[130px] md:p-[50px]"
       >
         <div
           class="w-[80px] h-[100px] px-[10px] flex flex-col items-center mb-[20px]"
@@ -57,14 +53,6 @@
         </div>
       </div>
     </div>
-    <!-- <p>This is one of the blog most i have written</p>
-    <a
-      href="https://medium.com/@kristagift/a-react-counter-app-implemented-with-two-methods-react-hook-usereducer-31d2eba832ee"
-      target="_blank"
-      class="underline"
-    >
-      How to create a React Counter App</a
-    > -->
   </div>
 </template>
 
@@ -88,10 +76,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.icon {
-  width: 200px;
-  height: 50px;
-}
-</style>

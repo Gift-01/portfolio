@@ -1,18 +1,18 @@
 <template>
   <div class="pt-[130px] pb-[100px] relative" id="blog">
     <div class="flex items-center justify-center">
-      <div>
+      <div class="">
         <h1
           class="flex items-center justify-center font-black text-2xl md:text-5xl mb-[25px]"
         >
           BLOG
         </h1>
         <div
-          class="px-[20px] flex md:unset flex-col items-center md:px-0 md:w-[270px] h-[395px]"
+          class="px-[20px] flex md:unset flex-col items-center md:px-0 md:w-[270px] h-[395px] border-2 border-gray-600"
         >
           <img
             :src="counterApp"
-            class="w-[200px] mb-[20px] md:mb-0 h-[250px] mt-[70px] md:mt-[153px]"
+            class="w-[200px] mb-[20px] md:mb-0 h-[250px] mt-[70px] md:mt-[0px]"
           />
           <h2 class="flex text-lg">
             A React Counter App Implemented with two Methods -React Hooks and

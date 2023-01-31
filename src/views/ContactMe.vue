@@ -1,11 +1,11 @@
 <template>
   <div
     id="contact"
-    class="w-[100%] h-[100%] flex justify-center pt-[50px] pb-[30px] md:pb-[100px] bg-gray-600"
+    class="w-[100%] h-[100%] flex justify-center pt-[50px] pb-[30px] md:pb-[100px]"
   >
-    <div class="w-[75%] md:w-[80%] sm:w-[50%] xl:w-[50%]">
+    <div class="w-[90%] md:w-[80%] sm:w-[50%] xl:w-[50%]">
       <h1
-        class="flex items-center justify-center mb-[35px] text-gray-50 text-2xl"
+        class="flex items-center justify-center mb-[35px] font-black text-2xl"
       >
         CONTACT ME
       </h1>

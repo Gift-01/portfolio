@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-[100vh] bg-gray-400">
+  <div class="min-h-[100vh] bg-gray-100">
     <div class="min-h-[calc(100vh-180px)]">
       <router-view />
     </div>

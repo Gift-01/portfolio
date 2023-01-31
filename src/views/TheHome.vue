@@ -2,9 +2,9 @@
   <div>
     <TheNavigation />
   </div>
-  <div id="home" class="bg-gray-600 text-gray-50">
+  <div id="home" class="bg-gray-100">
     <div class="w-full">
-      <div class="px-0 md: px-8 pt-[270px] md:pt-[150px] mx-6 md:mx-2">
+      <div class="px-0 md: px-8 pt-[175px] md:pt-[150px] mx-6 md:mx-2">
         <div class="flex justify-center items-center">
           <img :src="profile" class="w-[120px] h-[150px] rounded-full" />
         </div>

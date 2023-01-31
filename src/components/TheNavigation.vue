@@ -20,6 +20,8 @@
             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
           </svg>
         </button>
+        <button @click="toggle">x</button>
+        <button>{{ }}</button>
       </div>
       <div
         :class="open ? 'block' : 'hidden'"
