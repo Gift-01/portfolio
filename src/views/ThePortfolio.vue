@@ -10,7 +10,7 @@
         <div>
           <div class="box">
             <div class="imgbx">
-              <img :src="databasePreview" />
+              <amp-img :src="databasePreview" />
             </div>
             <div class="content">
               <div>
@@ -36,7 +36,7 @@
         <div>
           <div class="box">
             <div class="imgbx">
-              <img :src="calculatorPreview" />
+              <amp-img :src="calculatorPreview" />
             </div>
             <div class="content">
               <div>
@@ -62,7 +62,7 @@
         <div>
           <div class="box">
             <div class="imgbx">
-              <img :src="counterAppPreview" />
+              <amp-img :src="counterAppPreview" />
             </div>
             <div class="content">
               <div>

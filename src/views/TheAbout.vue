@@ -26,29 +26,29 @@
         <div
           class="w-[80px] h-[100px] px-[10px] flex flex-col items-center mb-[20px]"
         >
-          <img :src="logo" />
+          <img :src="logo" alt="html-logo" />
           <span> Html</span>
         </div>
         <div
           class="w-[80px] h-[100px] px-[10px] flex flex-col items-center mb-[20px]"
         >
-          <img :src="css" />
+          <img :src="css" alt="css-icon" />
           <span> Css</span>
         </div>
         <div
           class="w-[80px] h-[100px] px-[10px] flex flex-col items-center mb-[20px]"
         >
-          <img :src="react" />
+          <img :src="react" alt="reactIcon" />
           <span> React</span>
         </div>
         <div
           class="w-[80px] h-[100px] px-[10px] flex flex-col items-center mb-[20px]"
         >
-          <img :src="vue" />
+          <img :src="vue" alt="vue-icon" />
           <span class="text-center"> Vue</span>
         </div>
         <div class="px-[10px] w-[80px] flex flex-col items-center">
-          <img :src="tailwind" />
+          <img :src="tailwind" alt="tailwindIcon" />
           <span class="text-center"> Tailwind </span>
         </div>
       </div>

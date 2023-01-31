@@ -20,17 +20,14 @@
             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
           </svg>
         </button>
-        <button @click="toggle">x</button>
-        <button>{{ }}</button>
       </div>
       <div
         :class="open ? 'block' : 'hidden'"
         class="w-full flex-grow sm:flex sm:items-center sm:w-auto"
       >
         <div
-          class="w-full flex flex-col justify-between md:flex-row text-sm sm:flex-grow"
+          class="w-full block md:flex flex-col justify-between md:flex-row text-sm sm:flex-grow"
         >
-          <p class="pt-[10px] md:pt-0 text-gray-50 text-xl">Okoro Gift</p>
           <div>
             <button
               @click="scroll('home')"
