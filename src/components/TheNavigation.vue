@@ -1,81 +1,121 @@
 <template>
-  <div
-    :class="open ? 'h-[258px] md:h-[100px]' : 'h-[100px]'"
-    class="fixed top-0 w-full z-[99] bg-gray-600 shadow-lg flex items-center"
+  <nav
+    class="bg-gray-600 fixed top-0 w-full z-[99] shadow-lg h-[px] md:h-[100px]"
   >
-    <div
-      class="w-full flex items-center justify-between flex-wrap bg-teal px-6"
-    >
-      <div class="block sm:hidden">
-        <button
-          @click="toggle"
-          class="flex items-center px-3 py-2 border rounded text-teal-lighter border-teal-light hover:text-white hover:border-white"
-        >
-          <svg
-            class="fill-current h-3 w-3"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-          </svg>
-        </button>
-      </div>
-      <div
-        :class="open ? 'block' : 'hidden'"
-        class="w-full flex-grow sm:flex sm:items-center sm:w-auto"
-      >
-        <div
-          class="w-full block md:flex flex-col justify-between md:flex-row text-sm sm:flex-grow"
-        >
-          <div>
-            <button
-              @click="scroll('home')"
-              class="text-left md:text-center no-underline block mt-4 sm:inline-block sm:mt-0 text-gray-50 hover:text-lg transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-110 mr-4 focus:underline hover:font-black hover:underline"
-            >
-              Home
-            </button>
-
-            <button
-              @click="scroll('about')"
-              class="text-left md:text-center no-underline block mt-4 sm:inline-block sm:mt-0 text-gray-50 transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-110 mr-4 focus:underline hover:font-black hover:text-lg"
-            >
-              About
-            </button>
-            <button
-              @click="scroll('portfolio')"
-              class="text-left md:text-center no-underline block mt-4 sm:inline-block sm:mt-0 text-gray-50 hover:-translate-y-1 transition duration-200 ease-in-out hover:scale-110 mr-4 focus:underline hover:font-black hover:text-lg"
-            >
-              portfolio
-            </button>
-            <button
-              @click="scroll('blog')"
-              class="text-left md:text-center no-underline block mt-4 sm:inline-block sm:mt-0 text-gray-50 hover:-translate-y-1 hover:scale-110 mr-4 transition duration-200 ease-in-out focus:underline hover:font-black hover:text-lg"
-            >
-              Blog
-            </button>
-            <button
-              @click="scroll('contact')"
-              class="text-left md:text-center no-underline block mt-4 sm:inline-block sm:mt-0 text-gray-50 transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-110 focus:underline hover:font-black hover:text-lg mr-4"
-            >
-              Contact
-            </button>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex-shrink-0">
+          <p class="text-gray-300 pt-[1px] md:pt-[50px]">Okoro Gift</p>
+        </div>
+        <div class="flex items-center">
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-baseline space-x-4 pt-[50px]">
+              <button
+                @click="scroll('about')"
+                class="text-gray-300 hover:text-white hover:text-xl px-3 py-2 rounded-md text-base font-medium"
+              >
+                About
+              </button>
+              <button
+                @click="scroll('skills')"
+                class="text-gray-300 hover:text-white hover:text-xl px-3 py-2 rounded-md text-base font-medium"
+              >
+                Skills
+              </button>
+              <button
+                @click="scroll('portfolio')"
+                class="text-gray-300 hover:text-white hover:text-xl px-3 py-2 rounded-md text-base font-medium"
+              >
+                Projects
+              </button>
+              <button
+                @click="scroll('contact')"
+                class="text-gray-300 hover:text-white hover:text-xl px-3 py-2 rounded-md text-base font-medium"
+              >
+                Contact
+              </button>
+            </div>
           </div>
+        </div>
+        <div class="-mr-2 flex md:hidden">
+          <button
+            @click="toggleMenu"
+            class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white transition duration-150 ease-in-out"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              :class="{ hidden: isMenuOpen, block: !isMenuOpen }"
+              class="h-6 w-6"
+              stroke="currentColor"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+            <svg
+              :class="{ hidden: !isMenuOpen, block: isMenuOpen }"
+              class="h-6 w-6"
+              stroke="currentColor"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
         </div>
       </div>
     </div>
-  </div>
+    <div :class="{ block: isMenuOpen, hidden: !isMenuOpen }" class="md:hidden">
+      <div class="px-2 pt-2 pb-3 sm:px-3">
+        <button
+          @click="scroll('about')"
+          class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+        >
+          About
+        </button>
+        <button
+          @click="scroll('skills')"
+          class="text-gray-300 hover:text-white hover:text-xl px-3 py-2 rounded-md text-base font-medium"
+        >
+          Skills
+        </button>
+        <button
+          @click="scroll('portfolio')"
+          class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+        >
+          Project
+        </button>
+
+        <button
+          @click="scroll('contact')"
+          class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+        >
+          Contact
+        </button>
+      </div>
+    </div>
+  </nav>
 </template>
 <script>
 export default {
   data() {
     return {
-      open: false,
+      isMenuOpen: false,
     };
   },
   methods: {
-    toggle() {
-      this.open = !this.open;
+    toggleMenu() {
+      this.isMenuOpen = !this.isMenuOpen;
     },
     scroll(refName) {
       const element = document.getElementById(refName);
@@ -84,3 +124,4 @@ export default {
   },
 };
 </script>
+e>
