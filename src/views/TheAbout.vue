@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import AboutLogic from "../Functionality/AboutLogic.vue";
+import AboutLogic from "../Functionality/AboutLayout.vue";
 
 export default {
   components: { AboutLogic },

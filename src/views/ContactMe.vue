@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import ContactLogic from "../Functionality/ContactLogic.vue";
+import ContactLogic from "../Functionality/ContactLayout.vue";
 
 export default {
   components: { ContactLogic },

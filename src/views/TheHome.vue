@@ -15,7 +15,7 @@ import TheFooter from "../components/TheFooter.vue";
 import TheAbout from "./TheAbout.vue";
 import ContactMe from "./ContactMe.vue";
 import TheSkills from "./TheSkills.vue";
-import HomeLogic from "../Functionality/HomeLogic.vue";
+import HomeLogic from "../Functionality/HomeLayout.vue";
 
 export default {
   components: {

@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import PortfolioLogic from "../Functionality/PortfolioLogic.vue";
+import PortfolioLogic from "../Functionality/PortfolioLayout.vue";
 
 export default {
   components: { PortfolioLogic },

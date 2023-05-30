@@ -1,3 +1,3 @@
 <template>
-  <div>The Counter</div>
+  <div>Carefinder APP</div>
 </template>
