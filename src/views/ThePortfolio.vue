@@ -1,14 +1,14 @@
 <template>
   <div>
-    <PortfolioLogic />
+    <PortfolioLayout />
   </div>
 </template>
 
 <script>
-import PortfolioLogic from "../Functionality/PortfolioLayout.vue";
+import PortfolioLayout from "../Layout/PortfolioLayout.vue";
 
 export default {
-  components: { PortfolioLogic },
+  components: { PortfolioLayout },
   data: function () {
     return {};
   },

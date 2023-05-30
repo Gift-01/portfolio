@@ -1,6 +1,6 @@
 <template>
   <TheNavigation />
-  <HomeLogic />
+  <HomeLayout />
   <TheAbout />
   <TheSkills />
   <Theporfolio />
@@ -15,7 +15,7 @@ import TheFooter from "../components/TheFooter.vue";
 import TheAbout from "./TheAbout.vue";
 import ContactMe from "./ContactMe.vue";
 import TheSkills from "./TheSkills.vue";
-import HomeLogic from "../Functionality/HomeLayout.vue";
+import HomeLayout from "../Layout/HomeLayout.vue";
 
 export default {
   components: {
@@ -25,7 +25,7 @@ export default {
     TheAbout,
     ContactMe,
     TheSkills,
-    HomeLogic,
+    HomeLayout,
   },
   data: function () {
     return {};

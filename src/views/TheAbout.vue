@@ -1,14 +1,14 @@
 <template>
   <div>
-    <AboutLogic />
+    <AboutLayout />
   </div>
 </template>
 
 <script>
-import AboutLogic from "../Functionality/AboutLayout.vue";
+import AboutLayout from "../Layout/AboutLayout.vue";
 
 export default {
-  components: { AboutLogic },
+  components: { AboutLayout },
   data: function () {
     return {};
   },

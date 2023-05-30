@@ -1,14 +1,14 @@
 <template>
   <div>
-    <ContactLogic />
+    <ContactLayout />
   </div>
 </template>
 
 <script>
-import ContactLogic from "../Functionality/ContactLayout.vue";
+import ContactLayout from "../Layout/ContactLayout.vue";
 
 export default {
-  components: { ContactLogic },
+  components: { ContactLayout },
   data: function () {
     return {};
   },
