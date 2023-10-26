@@ -10,11 +10,12 @@
       <div class="w-2/4 mb-20 flex flex-col gap-y-[20px]">
         <p>HTML 5</p>
         <p>CSS 3</p>
-        <p>Styled Component</p>
         <p>Javascript</p>
+        <p>Vue.js</p>
       </div>
       <div class="w-2/4 mb-4 flex flex-col gap-y-[20px]">
-        <p>Typescript</p>
+        <p>TailwindCSS</p>
+        <p>Styled Component</p>
         <p>React.JS</p>
         <p>Quasar</p>
       </div>

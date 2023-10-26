@@ -64,7 +64,7 @@
               />
               <p>+2348108082491</p>
               <a
-                href="https://wa.me/08108082491? text=hi"
+                href="mailto:kristagift@gmail.com"
                 target="_blank"
                 class="hover:underline"
               >

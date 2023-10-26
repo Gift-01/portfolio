@@ -9,13 +9,13 @@
       <div class="container">
         <div>
           <div class="box">
-            <img :src="databasePreview" />
+            <img src="../assets/CBT.png" />
           </div>
           <div
             class="border-solid border-2 border-light-blue-500 rounded-md text-center p-2 m-6 text-gray-100 bg-gray-700 hover:text-gray-900 hover:bg-gray-50"
           >
-            <router-link to="/userDatabase">
-              <button>View Website</button>
+            <router-link to="/cbt">
+              <button class="text-center">View Project</button>
             </router-link>
           </div>
         </div>
@@ -33,13 +33,13 @@
         </div>
         <div>
           <div class="box">
-            <img :src="counterAppPreview" />
+            <img :src="databasePreview" />
           </div>
           <div
             class="border-solid border-2 border-light-blue-500 rounded-md text-center p-2 m-6 text-gray-100 bg-gray-700 hover:text-gray-900 hover:bg-gray-50"
           >
-            <router-link to="/CareFinder">
-              <button class="text-center">View Project</button>
+            <router-link to="/userDatabase">
+              <button>View Website</button>
             </router-link>
           </div>
         </div>

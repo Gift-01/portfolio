@@ -20,7 +20,10 @@
         <a href="https://github.com/Gift-01" target="_blank">
           <img :src="github" class="w-[30px] h-[30px] rounded-[50%]" />
         </a>
-        <a href="https://www.linkedin.com/in/gift-okoro-b526b7230/">
+        <a
+          href="https://www.linkedin.com/in/gift-okoro-b526b7230/"
+          target="_blank"
+        >
           <img :src="linkedIn" class="w-[30px] h-[30px] rounded-[50%]" />
         </a>
       </div>
@@ -28,7 +31,7 @@
         class="flex flex-col text-center justify-center bg-gray-600 rounded w-[100px] p-[10px] mx-36 md:mx-[42rem] border-white border-2"
       >
         <a
-          href="https://drive.google.com/file/d/1NiVSOMxrViNDjcQI6TqnzXDKKHu6D0sk/view?usp=sharing"
+          href="https://docs.google.com/document/d/1brdep52JRd2MqjELyanhDsH-lJr8D5jKjP-nHubWF8c/edit?usp=sharing"
           target="_blank"
         >
           <button class="text-white">View CV</button>
